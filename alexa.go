@@ -7,7 +7,6 @@ import (
 	"github.com/davecgh/go-spew/spew"
 )
 
-// Handler is the lambda handler
 func Handler() (alexa.Response, error) {
 	fmt.Print("start ")
 

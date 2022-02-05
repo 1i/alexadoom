@@ -7,7 +7,7 @@ import (
 	"github.com/davecgh/go-spew/spew"
 )
 
-// Handler is the lambda hander
+// Handler is the lambda handler
 func Handler() (alexa.Response, error) {
 	fmt.Print("start ")
 
@@ -19,6 +19,7 @@ func Handler() (alexa.Response, error) {
 		Body:              alexa.ResBody{OutputSpeech: &payload, ShouldEndSession: true},
 	}
 
+	// Extra logging library for better formatting
 	spew.Dump(response)
 	fmt.Sprintf("response : %T/n", response)
 	fmt.Print("end ")
